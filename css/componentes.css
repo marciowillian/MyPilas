@@ -3,11 +3,29 @@
 \*------------*/
 
 .plano {
+    position: relative;
+
     padding: 10px;
     border: 1px solid #95a4a5;
 
     font-size: 1.4rem /* 14px */
 } 
+
+.plano--mais-popular::after {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+    padding: 0 10px;
+
+    background-color: #c20303;
+    color: #fff;
+    
+    font-size: 0.7141em;
+    line-height: 2.5;
+
+    content: "MAIS POPULAR";
+}
 
 .plano__cabecalho {
     background-color: #95a4a5;
@@ -124,6 +142,7 @@
     DEPOIMENTO
 \*------------*/
 .depoimento {
+
     font-size: 2.2rem;
 }
 
@@ -137,12 +156,26 @@
 }
 
 .depoimento > blockquote {
+    position: relative;
     margin: 0;
     padding: 0 60px;
 
     text-align: center;
     font-size: 1em;
 }
+
+.depoimento > blockquote::before {
+    position: absolute;
+    left: 0;
+    top: -0.35em;
+
+    color: #ccc;
+
+    font-size: 8em;
+
+    content: "\201C";
+}
+
 
 .depoimento__autor {
     margin-top: 40px;
