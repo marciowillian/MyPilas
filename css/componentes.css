@@ -67,11 +67,14 @@
 \*------------*/
 .botao {
     display: inline-block;
+    padding: 0.8em 1.2em;
+
     background-color: #bbb;
     color: #fff;
 
     font-size: 1em;
-    padding: 0.8em 1.2em;
+
+    line-height: normal;
     text-decoration: none;
     margin-top: 15px;
 }
@@ -82,7 +85,7 @@
     color: #fff;
 }
 
-.botao--assinar {
+.botao--assinar, .botao--login {
     background-color: #127d00;
 }
 
@@ -224,3 +227,63 @@
         display: none;
     }
 }
+
+
+/*------------*\
+      MENU
+\*------------*/
+.menu {
+    margin: 0;
+
+    font-size: 1.4rem;
+
+    list-style: none;
+}
+
+
+@media(max-width: 991px) {
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+    
+        display: none;
+        width: 200px;
+        border-right: 1px solid #eee;
+    
+        background-color: #fbfbfb;
+    }
+
+    .menu--showing {
+        display: block;
+    }
+
+    .menu__item {
+        display: block;
+    
+        line-height: 3;
+    }
+    
+    .menu__item--botao {
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 992px) {
+    .menu__item {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .menu__item:last-of-type {
+        padding-right: 0px;
+    }
+
+}
+
+
+
+
+
