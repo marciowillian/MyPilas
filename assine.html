@@ -34,14 +34,20 @@
                     <input id="razao-social" type="text" class="campo">
                 </div>
 
-                <div class="grupo-entrada">
-                    <label for="cnpj">CNPJ</label>
-                    <input id="cnpj" type="text" class="campo">
-                </div>
-
-                <div class="grupo-entrada">
-                    <label for="data-fundacao">Data de fundação</label>
-                    <input id="data-fundacao" type="date" class="campo" required>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="cnpj">CNPJ</label>
+                            <input id="cnpj" type="text" class="campo">
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="data-fundacao">Data de fundação</label>
+                            <input id="data-fundacao" type="date" class="campo" required>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grupo-entrada">
@@ -54,34 +60,46 @@
                     <input id="email" type="email" class="campo" required>
                 </div>
 
-                <div class="grupo-entrada">
-                    <label for="estado">Estado</label>
-                    <select id="estdao" class="campo">
-                        <option>Selecione</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="CE">Ceará</option>
-                        <option value="SP">São Paulo</option>
-                    </select>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="estado">Estado</label>
+                            <select id="estdao" class="campo">
+                                <option>Selecione</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="CE">Ceará</option>
+                                <option value="SP">São Paulo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="cidade">Cidade</label>
+                            <select id="cidade" class="campo">
+                                <option>Selecione</option>
+                                <option value="cidade">São Luis</option>
+                                <option value="cidade">São José de Ribamar</option>
+                                <option value="cidade">Paço do Lumiar</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="grupo-entrada">
-                    <label for="cidade">Cidade</label>
-                    <select id="cidade" class="campo">
-                        <option>Selecione</option>
-                        <option value="cidade">São Luis</option>
-                        <option value="cidade">São José de Ribamar</option>
-                        <option value="cidade">Paço do Lumiar</option>
-                    </select>
-                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="senha">Senha</label>
+                            <input id="senha" type="password" class="campo" required>
+                        </div>
+                    </div>
 
-                <div class="grupo-entrada">
-                    <label for="senha">Senha</label>
-                    <input id="senha" type="password" class="campo" required>
-                </div>
-
-                <div class="grupo-entrada">
-                    <label for="confirmacao-senha">Confirme a senha</label>
-                    <input id="confirmacao-senha" type="password" class="campo" required>
+                    <div class="col-sm-3">
+                        <div class="grupo-entrada">
+                            <label for="confirmacao-senha">Confirme a senha</label>
+                            <input id="confirmacao-senha" type="password" class="campo" required>
+                        </div>
+                    </div>
                 </div>
 
                 <div style="text-align: center; margin-top: 40px;">
